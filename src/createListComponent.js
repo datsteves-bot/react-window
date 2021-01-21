@@ -322,7 +322,7 @@ export default function createListComponent({
       if (itemCount > 0) {
         for (let index = startIndex; index <= stopIndex; index++) {
           items.push(
-            createElement(children, {
+            children({
               data: itemData,
               key: itemKey(index, itemData),
               index,
